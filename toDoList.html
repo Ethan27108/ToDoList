@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do-List</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="getStorage()">
+  
+  <div id="table">
+    <table id="myTable">
+      <tr><th>Tasks To Do</th><th>Due Date</th><th>Priority</th><th>Completed</th><th>Delete</th></th></tr>
+    </table>
+  </div>
+  <div id="form">
+    <label for="newTask">What is the new task:</label>
+    <input type="text" id="newTask" name="newTask">
+    <label for="dueDate">What is the due date:</label>
+    <input type="date" id="dueDate" name="dueDate">
+    <button class="buttonGroup" type="button" onclick="createFunction()">Submit</button>
+    <button class="buttonGroup" id="sort" type="button" onclick="sortTable()">Sort</button>
+    <button class="buttonGroup" id="store" type="button" onclick="localStorageCreator()">Save</button>
+  </div>
+</body>
+</html>
